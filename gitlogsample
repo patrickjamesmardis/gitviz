@@ -1,0 +1,660 @@
+commit be90f293b708d7cc9180e6b685c4617f80e81f13
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 11:48:26 2021 -0500
+
+    rm .gitignore
+
+commit d8d60e87a41d6c4d73d22c2d464d24e5ade9b11d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 09:58:38 2021 -0500
+
+    reset start time
+
+commit f6ac773843288f6ffa480e964839f3b98774e060
+Merge: 70998ed 940babf
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 09:57:01 2021 -0500
+
+    Merge branch 'main' of https://github.com/patrickjamesmardis/commitment into main
+
+commit 70998ed675765d75f868d1f21d34e1adf6f64155
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 09:56:43 2021 -0500
+
+    add pjm
+
+commit cb99275d2ebe990f9883f4fdc28ca66085245925
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 09:38:30 2021 -0500
+
+    fix resize
+
+commit 940babf4e85888e12f5e1f413bd566bd2a724374
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 09:05:25 2021 -0500
+
+    Update README.md
+
+commit 95931ba77eca558c7c4d84c17e994e01904740cd
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:47:38 2021 -0500
+
+    remove console.log()s
+
+commit 40b8f8c9b04c803c6c3e873fc63599a577d5fe67
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:46:41 2021 -0500
+
+    link hovers
+
+commit 73356dce7999aacfdb59dac13855aec7e6bdee3d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:25:38 2021 -0500
+
+    fix pointer event
+
+commit bb8b4d0ce8ed76dd30243b9eb200ffca55f6fbad
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:21:33 2021 -0500
+
+    resize event
+
+commit 064bfe205bd82048c43f2db2ad73c30e7126c913
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:15:49 2021 -0500
+
+    add links
+
+commit b3b18c3ad05c9f5d82a232ef0844296f053e6c16
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:08:48 2021 -0500
+
+    dots down
+
+commit 19d68a8a4a3d78dc529b46d17a9aba47db6d2b0b
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:07:22 2021 -0500
+
+    dots up
+
+commit 4443ad39085f54ba50acf32dba93695d31d5fc16
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 08:05:44 2021 -0500
+
+    reset dots
+
+commit 2b236c17d0484c86e569736f703d24254edd5412
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:58:09 2021 -0500
+
+    reset start time
+
+commit 8bddb556f6b57234273c01c993d5a70394a87686
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:57:47 2021 -0500
+
+    dashed circle out
+
+commit b733dfbaf4f99fc0ff0edaa9983601dc58b207ad
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:53:56 2021 -0500
+
+    pulse dashed circle
+
+commit f5e62ab42dbfa36b1d21d4d9b6d9f2341af54070
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:49:13 2021 -0500
+
+    dashed circle up
+
+commit 21a88949f207f74e44eee29ce1c59c6f6f6af684
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:47:47 2021 -0500
+
+    reset dashed circle
+
+commit ff7d5920a0a326996ed863cc87f636d29dd3f045
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Tue Feb 2 07:39:32 2021 -0500
+
+    show/hide cursor
+
+commit 6d645441f5e1bf019d76cac4d6931669a31da1ff
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 21:00:13 2021 -0500
+
+    fix readme
+
+commit 32f49dda22c71b033462e965cc42364b11a1f2e0
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:57:09 2021 -0500
+
+    edit readme
+
+commit fddc85dede2c103a8177a927c7ec8222fe02464f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:49:06 2021 -0500
+
+    reset start time
+
+commit 1152f52c18ef074bfd5d178548cc6c527152eb7f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:48:52 2021 -0500
+
+    grid opacity 0
+
+commit a48ed77366385ef2616e247bfc0267d94c607b80
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:46:28 2021 -0500
+
+    gsap to GSAP
+
+commit 136e26046abb3ac7308732643b44cb454e9a7a1d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:45:35 2021 -0500
+
+    start readme
+
+commit 07e0964e7feaa487cb834e826d826e5113ae6d6b
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:43:21 2021 -0500
+
+    movemes to 0 w/h
+
+commit 95610528568a85f191a843ad891b7d063fc8091d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:34:27 2021 -0500
+
+    fix comments
+
+commit abc30e1f21e3e85b62c32c7ee29516d4ed3fa076
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:33:47 2021 -0500
+
+    adjust movemeH9, movemeV9 start positions
+
+commit 1b10537d1cba24a55f2be0699253448e2d20e3c9
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:32:18 2021 -0500
+
+    movemes to 100% width/height
+
+commit 143d841e31300972d7f8a613029a837c10fa5a46
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:29:28 2021 -0500
+
+    movemes to bottom right
+
+commit 26f776448011dba807f7c1a5da04a89f716e9ec1
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:28:15 2021 -0500
+
+    adjust zigzag speed
+
+commit 45f87578e6a73aa15bf03ba4ab74d30d695e821f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:22:52 2021 -0500
+
+    movemes to original x,y
+
+commit c4a88b0ac185385da574b7b8679aec4df6b75893
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:07:21 2021 -0500
+
+    reset start time
+
+commit e80806058b04e776e03c88d37ac4449e7971c787
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:06:41 2021 -0500
+
+    movemeh9,v9
+
+commit 58608496a0fbec9d1ed3058911c98754fc49a1fb
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:03:50 2021 -0500
+
+    ladder movemeh8,v8
+
+commit 4eb358139eba934f76525d917cf82f642263ca8d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:02:33 2021 -0500
+
+    10 movemes
+
+commit ed88c2f6d87e71075f05042478a2ce279dad8519
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 20:01:34 2021 -0500
+
+    10 movemes
+
+commit 1e2ef3208308bc3ceaf36c6ccdbad200bc4b56fa
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:59:47 2021 -0500
+
+    ladder movemeh7,v7
+
+commit 60760fddc00704e88e9163a0c7fc88ea2f25ae9a
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:59:00 2021 -0500
+
+    ladder movemeh6,v6
+
+commit 593e3b22b0fd7f6640d06e4e7fd523e402cf60c7
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:58:22 2021 -0500
+
+    ladder movemeh5,v5
+
+commit bc473bab13f548daebbd84c3b562ca1a362f4416
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:57:46 2021 -0500
+
+    ladder movemeh4,v4
+
+commit 9251b1c366fc86ba10e4ddbd6dcbbcbcb3a54f8a
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:56:56 2021 -0500
+
+    ladder movemeh3,v3
+
+commit d0dc43b9dc361f496f65d75a8d7b18ee658e98c2
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:56:02 2021 -0500
+
+    ladder movemeh2,v2
+
+commit 14e41d288f2d41710f4531e06c6941dd1c186643
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:54:37 2021 -0500
+
+    ladder movemeh1,v1
+
+commit b93d8cd3cb3c1687aeb03d6b7516167446420d76
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:53:11 2021 -0500
+
+    ladder movemeh0,v0
+
+commit 15aec05129c86148f26abf41ce8d98b2e13c71e7
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:50:53 2021 -0500
+
+    reset movemes
+
+commit d0a32fc8e1d2ddbf2710c064bd545854399a0dd3
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:46:22 2021 -0500
+
+    movemeh8,v8
+
+commit e5f79b7bc1d0cb47be3adabd99b07da346d46571
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:42:28 2021 -0500
+
+    movemeh7,v7
+
+commit 29ccf07079e41e61825a0246f8146c665dc684e7
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:41:26 2021 -0500
+
+    movemeh6,v6
+
+commit f3df5ba4810fb3e8ad5c539e6c5510d45e212679
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:40:31 2021 -0500
+
+    movemeh4,v5
+
+commit fe72ad470f6d6a98c08f04e5a4c564436e091f28
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:37:44 2021 -0500
+
+    moveme start positions
+
+commit ed72d499d6322e39afc8c185761db320976671eb
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:33:22 2021 -0500
+
+    9 moveme rects
+
+commit a2ddc586aecd53fff71a9ece722882d303940902
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:23:24 2021 -0500
+
+    movemeh4,v4
+
+commit 777acdd313296a45d14ec7e13cb36ae2a249a105
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:21:43 2021 -0500
+
+    movemeh3,v3
+
+commit 34d4b5ce2b76b6f0108a5b3d943f9c266ca9678d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:19:51 2021 -0500
+
+    movemeh2,v2
+
+commit 0e204f46c8c771253037aca0de24431ba75fdd52
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:18:22 2021 -0500
+
+    movemeh1,v1
+
+commit 2201e79dd8f3ae6944165fa45ee7424c70736d93
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 19:12:04 2021 -0500
+
+    movemeh0,v0
+
+commit ff11c551353b5349c8ef84c04f9d853a72be5f15
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 18:59:24 2021 -0500
+
+    reset movemes after random grid
+
+commit 60534f82b4b02aa406d971e27ef6bac98588ad9e
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 18:22:41 2021 -0500
+
+    moveme rects back, animate with grid
+
+commit 0ff62d0fb39bb0dbab2af77b2c524f8550167e1b
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 18:04:13 2021 -0500
+
+    grid rects back
+
+commit a74fe2514947f2e3bd86822377190aeca67d8820
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 17:51:25 2021 -0500
+
+    blob animation
+
+commit 2993a54a30e03b233997f393a0d8c1ccfc9a79dd
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 17:29:33 2021 -0500
+
+    add blob to main.js
+
+commit 95067b39cd25f0b1be431c5c2eac55454acae2db
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 17:25:56 2021 -0500
+
+    add blob
+
+commit 1b9fb6d7213902ee92c810f294210aa69a26cc0d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 16:16:53 2021 -0500
+
+    randomize dots bounce
+
+commit 2d8cfefc48747e1abf6c5a55f16b28612ad5213a
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 16:05:16 2021 -0500
+
+    55 89 all
+
+commit 62afb915c866f979c15a8cc481116e1e88aef36a
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 15:42:21 2021 -0500
+
+    21 34
+
+commit 70d93848c062bd8a8c7c64e42ac2fab592514f4e
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 15:07:10 2021 -0500
+
+    8 13
+
+commit b1dabf8a2e4d567004706b814ed3d15fde0009d7
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 15:01:36 2021 -0500
+
+    1 1 2 3 5
+
+commit 5a27367b6abe3bf6b320d98fa5d5965c97c61694
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 14:59:09 2021 -0500
+
+    set all dots to r:0 op:1 for pulsing
+
+commit d4017e6abd84de0d2bbae43a5e41df4d0323883c
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 14:58:03 2021 -0500
+
+    pulse dots
+
+commit 590295a2aa56665928f48275bdee23b687a848ab
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 14:48:59 2021 -0500
+
+    adding to main.js
+
+commit fce32197c7ae8ee10e86b5936606ac0852671d7c
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 11:08:40 2021 -0500
+
+    reset start time
+
+commit 3ced6b9019f0794e798f6c6e1dc085ad0c5499b2
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 11:07:45 2021 -0500
+
+    hello
+
+commit 4e8e79a8140260c1d5bc0a515ef3017210a38a5f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 11:07:22 2021 -0500
+
+    add hello to index
+
+commit 7de615e5658047c02001c6aa02489ead790b5764
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Mon Feb 1 10:39:06 2021 -0500
+
+    comments
+
+commit 31124c307e2ee6b6780458a011ddf496a9093eaf
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 16:27:17 2021 -0500
+
+    random move dots
+
+commit 880052c42a121cb9206f1d689ffe1c49a00824b4
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 16:08:45 2021 -0500
+
+    resize and spin rect
+
+commit ffb156cdb349d4f82f634ece8dd0c30aca9ad2d7
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 16:08:21 2021 -0500
+
+    moveme ids
+
+commit e1145906c5abaf554904233624bf7b5cca14c5d4
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 14:28:33 2021 -0500
+
+    randomHighlight() main.js
+
+commit 9aeae5c74b403d3738b01c48ca7bb38439b74ce9
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 14:20:13 2021 -0500
+
+    uncomment main.js
+
+commit 76723b2cf560ba01c40b373ac4fef8cdb1ef6982
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 06:27:03 2021 -0500
+
+    reset main.js
+
+commit 517777a29a5947c6fda942e0e8b7b1154a5c605e
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sun Jan 31 00:19:54 2021 -0500
+
+    clean up moveme, grid rects, dashcircle
+
+commit aa96339aa4cda4640b81d0214f2527888d84c7a0
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 23:11:42 2021 -0500
+
+    dashed circle
+
+commit 2e58448f0b98af04d2408a5cc73cf7bbb421a3d4
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 16:18:05 2021 -0500
+
+    more .moveme
+
+commit 5c0ba7a1a2c673fd77cb4a2b336c3fbc646f4a4e
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 16:00:46 2021 -0500
+
+    finish .moveme and circle of dots
+
+commit f3971f123bf9cb9f10a16f6834c3cb74698fb2fc
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 14:53:46 2021 -0500
+
+    .moveme rects
+
+commit 331fa01808d3e3f76f89f022b58046ab53821274
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 14:11:57 2021 -0500
+
+    rects for grid
+
+commit b426656b16c70d1e6f69b484d27a81148b6914fe
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 13:28:29 2021 -0500
+
+    cols
+
+commit e53aefb36902a544aa82cbeee9a641bdc42c5869
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 12:29:48 2021 -0500
+
+    11 x 11 circle grid
+
+commit eec9a4c6342fb7cd09e7d86d18bbac96c99d5249
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 11:41:28 2021 -0500
+
+    start new gsap timeline
+
+commit d6d1896fb759f8f9271062da47d447d1fec770c8
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Sat Jan 30 11:09:13 2021 -0500
+
+    reset new branch
+
+commit 36bb68a0a0a6cf8d8c910e806f6c89c89755fb9d
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 21:22:09 2021 -0500
+
+    colors
+
+commit bd6d7a0aec6cfe253863d72c9081d295304b5eca
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 20:52:01 2021 -0500
+
+    cpp folder
+
+commit 1c4c62b892ef08dbcc5cd96670483ba7a7cdcac5
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 20:48:49 2021 -0500
+
+    makeLess.cpp to convert csv to colors
+
+commit a54edc8830761e16a97c917c24a70f3cb6ede6ca
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 18:58:26 2021 -0500
+
+    gray 1 + gray 2
+
+commit 1310cf96e731b763689e790d7b491fc1e0def420
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 18:11:01 2021 -0500
+
+    rm makeCols output file and add to .gitignore
+
+commit 6d16e0d9bec65b3da04c6549e00cedb33fa3e763
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 18:08:27 2021 -0500
+
+    add gsap, comment out animation for more content work
+
+commit 2fe8016b8b95699a48113236c8b6039bf9e30d25
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 17:40:16 2021 -0500
+
+    50% gray 1 + 50% gray 2
+
+commit 0953663631d44694d827cc2fc1e1e63602f10824
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 17:10:50 2021 -0500
+
+    orange 1 + orange 2
+
+commit ab00842a3d91eb2065366bafccef0aff36ee860a
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 16:13:11 2021 -0500
+
+    50% orange 1 + 50% orange 2
+
+commit 00fbe670a5cb342480793b4a2be8ba8bd5063358
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Fri Jan 29 15:39:46 2021 -0500
+
+    ditch the random
+
+commit 753706913570ac883e40cfd51f41e5bdaa0a684e
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 21:46:09 2021 -0500
+
+    add .gitignore
+
+commit f35c35896eda98741a993e8505c1b89f2423163c
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 21:37:09 2021 -0500
+
+    hide header
+
+commit ade4068ea1d7f25e6810c9b6928340776f1e0007
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 21:35:26 2021 -0500
+
+    red blue yellow
+
+commit 975e91869f8217be936b09a6888d0daeb54d193f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 21:15:15 2021 -0500
+
+    no more svg
+
+commit b599a160334b7bf417378972cb0c0dde0df41348
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 20:41:42 2021 -0500
+
+    add div styles
+
+commit 5db891e51d64ad8846195d1bf9f54fe4974bfd4b
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 20:41:22 2021 -0500
+
+    main.js - make boxes function
+
+commit c8529b21f6d230cf357e90871743f6a78c1bc8c1
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 20:15:11 2021 -0500
+
+    Rename readme.md to README.md
+
+commit 19adaba520abbcd26fa963601246c8cfe09a310f
+Author: Patrick James Mardis <59069682+patrickjamesmardis@users.noreply.github.com>
+Date:   Thu Jan 28 20:12:26 2021 -0500
+
+    init

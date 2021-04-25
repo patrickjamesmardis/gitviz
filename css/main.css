@@ -1,0 +1,66 @@
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+}
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+body {
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: IBMPlexMono;
+}
+section#main{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1% 0;
+    padding-bottom: 50px;
+}
+div.dir {
+    color: #fff;
+    height: 10vw;
+    background: #222;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+div.dir:hover {
+    background: #111;
+}
+
+div.dir:nth-child(even) {
+    margin: 1% 2% 1% 1%;
+}
+div.dir:nth-child(odd) {
+    margin: 1% 1% 1% 2%;
+}
+
+div.emoji{
+ position: absolute;
+ right: 20px;
+ top: 15px;
+ font-size: 30px;
+ cursor: pointer;
+}
+
+emoji-picker {
+    position: fixed;
+    top: 0;
+    left:0;
+    display: none;
+}
+
+#terminal {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    width: 100vw;
+}
