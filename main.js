@@ -34,9 +34,12 @@ ipcMain.handle('get', (event, arg) => {
 });
 
 ipcMain.handle('gitlog', (event, arg) => {
-    const cwd = process.env.PWD;
-    // console.log(cp.execSync(`cd ${arg} && git log && cd ${cwd}`).toString());
-    return;
+    const gitlogOptions = {
+        repo: arg,
+        includeMergeCommitFiles: true,
+        number: 200
+    }
+    return gitlog(gitlogOptions);
 });
 
 ipcMain.handle('updateEmoji', (event, arg) => {
@@ -49,21 +52,13 @@ ipcMain.handle('updateEmoji', (event, arg) => {
     });
 });
 
-ipcMain.handle('gitwindow', (event, arg) => {
-    const gitlogOptions = {
-        repo: arg,
-        number: 10
-    }
-    console.log(gitlog(gitlogOptions));
-    createGitWindow();
-});
 
 const buttons = [];
 config.emojis.forEach(emoji => {
     buttons.push(new TouchBarButton({
         label: emoji
     }));
-})
+});
 const touchBar = new TouchBar({
     items: buttons
 });
@@ -83,22 +78,6 @@ function createMainWindow() {
         gitWindows.forEach(window => window = null);
     });
     mainWindow.setTouchBar(touchBar);
-}
-
-function createGitWindow() {
-    let newWindow = new BrowserWindow({
-        width: 1200,
-        height: 900,
-        webPreferences: {
-            nodeIntegration: true,
-            preload: path.join(__dirname, 'preload.js')
-        }
-    });
-    gitWindows.push(newWindow);
-    newWindow.loadFile('index.html');
-    newWindow.on('closed', () => {
-        newWindow = null;
-    });
 }
 
 app.on('ready', createMainWindow);

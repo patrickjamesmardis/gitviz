@@ -41,10 +41,22 @@ window.addEventListener('DOMContentLoaded', () => {
             emojis[emojis.indexOf(old)] = e.detail.unicode;
         }
     }
+    function gitviz(e, d) {
+        console.log(e);
+        d3.select('section#main').transition().style('opacity', 0);
+        d3.select('section#gitviz').style('display', 'block');
+        d3.select('section#terminal').transition().style('height', `${0.3 * window.innerHeight}px`).select('p').text(`${d.name} >`);
+        let gitlog;
+        ipcRenderer.invoke('gitlog', d.path).then(res => {
+            gitlog = res;
+            console.log(gitlog);
+        });
+
+    }
     d3.select('#main')
         .selectAll('div.dir').data(gits).enter()
         .append('div').classed('dir', true)
-        .on('click', (e, d) => ipcRenderer.invoke('gitwindow', d.path))
+        .on('click', (e, d) => gitviz(e, d))
         .text(d => d.name)
         .append('div').classed('emoji', true)
         .text((d, i) => emojis[i])

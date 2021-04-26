@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: IBMPlexMono;
 }
-section#main{
+#main{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,4 +63,14 @@ emoji-picker {
     bottom: 0;
     background: #000;
     width: 100vw;
+    padding-left: 16px;
+}
+
+#gitviz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    display: none;
 }
