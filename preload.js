@@ -67,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 .append('div').classed('files', true).append('div').classed('statuses', true)
                 .selectAll('p').data(d => d.status).enter()
                 .append('p').html(d => d)
+                .style('color', d => d == 'M' ? '#33658A' : d == 'A' ? '#628B48' : '#925E78')
 
             d3.selectAll('div.files').data(res)
                 .append('div').classed('names', true)
