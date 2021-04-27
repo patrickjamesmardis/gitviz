@@ -12,8 +12,11 @@ let gits = [];
 const root = new gitinfo(process.env.HOME);
 
 function getGits(n) {
-    if (n.isGit && config.gits.includes(n.path)) {
+    if (n.isGit) {
         n.name = '~' + n.path.substring(process.env.HOME.length);
+        if (config.gits.includes(n.path)) {
+            n.emoji = config.emojis[config.gits.indexOf(n.path)];
+        }
         gits.push(n);
     }
     n.dirs.forEach(dir => {
@@ -28,8 +31,6 @@ ipcMain.handle('get', (event, arg) => {
         return root;
     } else if (arg === 'gits') {
         return gits;
-    } else if (arg === 'emojis') {
-        return config.emojis;
     }
 });
 
@@ -39,11 +40,6 @@ ipcMain.handle('gitlog', (event, arg) => {
         includeMergeCommitFiles: true,
         number: 200
     }
-    // let res = [];
-    // let gl = gitlog(gitlogOptions);
-    // for (let i = 0; i < gl.length; i + 9) {
-    //     res.push(gl.splice(0, 9));
-    // }
     return gitlog(gitlogOptions);
 });
 
@@ -57,21 +53,16 @@ ipcMain.handle('updateEmoji', (event, arg) => {
     });
 });
 
-
-const buttons = [];
-config.emojis.forEach(emoji => {
-    buttons.push(new TouchBarButton({
-        label: emoji
-    }));
-});
-const touchBar = new TouchBar({
-    items: buttons
-});
+function touchbarClick(emoji) {
+    let dirname = config.gits[config.emojis.indexOf(emoji)];
+    mainWindow.webContents.send('touchbar', dirname);
+}
 
 function createMainWindow() {
     mainWindow = new BrowserWindow({
         width: 1200,
         height: 900,
+        icon: path.join(__dirname, 'build', 'icon.png'),
         webPreferences: {
             nodeIntegration: true,
             preload: path.join(__dirname, 'preload.js')
@@ -81,6 +72,16 @@ function createMainWindow() {
     mainWindow.on('closed', () => {
         mainWindow = null;
         gitWindows.forEach(window => window = null);
+    });
+    const buttons = [];
+    config.emojis.forEach(emoji => {
+        buttons.push(new TouchBarButton({
+            label: emoji,
+            click: () => touchbarClick(emoji)
+        }));
+    });
+    const touchBar = new TouchBar({
+        items: buttons
     });
     mainWindow.setTouchBar(touchBar);
 }

@@ -1,13 +1,42 @@
 const d3 = require('d3');
 const { ipcRenderer } = require('electron');
 let gits;
-let emojis;
 
 ipcRenderer.invoke('get', 'gits').then(res => {
     gits = res;
 });
-ipcRenderer.invoke('get', 'emojis').then(res => {
-    emojis = res;
+
+function gitviz(dirname) {
+    d3.select('section#main').style('display', 'none');
+    d3.select('section#gitviz').style('display', 'flex');
+
+    ipcRenderer.invoke('gitlog', dirname).then(res => {
+        d3.select('section#gitviz')
+            .selectAll('div.commit').data(res).enter()
+            .append('div').classed('commit', true);
+        d3.selectAll('div.commit').data(res)
+            .append('p').classed('timestamp', true).text(d => d.authorDate);
+        d3.selectAll('div.commit').data(res)
+            .append('div').classed('circle', true)
+            .html(d => d.abbrevHash).transition().style('opacity', 1);
+        d3.selectAll('div.commit').data(res)
+            .append('p').classed('message', true).html(d => `"${d.subject}"`);
+        d3.selectAll('div.commit').data(res)
+            .append('p').classed('author', true).html(d => `-- ${d.authorName}`);
+        d3.selectAll('div.commit').data(res)
+            .append('div').classed('files', true).append('div').classed('statuses', true)
+            .selectAll('p').data(d => d.status).enter()
+            .append('p').html(d => d)
+            .style('color', d => d == 'M' ? '#33658A' : d == 'A' ? '#628B48' : '#925E78')
+        d3.selectAll('div.files').data(res)
+            .append('div').classed('names', true)
+            .selectAll('p').data(d => d.files).enter()
+            .append('p').html(d => d)
+    });
+}
+
+ipcRenderer.on('touchbar', (e, m) => {
+    gitviz(m)
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -41,56 +70,12 @@ window.addEventListener('DOMContentLoaded', () => {
             emojis[emojis.indexOf(old)] = e.detail.unicode;
         }
     }
-    function gitviz(e, d) {
-        console.log(e);
-        d3.select('section#main').style('display', 'none');
-        d3.select('section#gitviz').style('display', 'flex');
-        d3.select('section#terminal').select('p').text(`${d.name}`);
-
-        ipcRenderer.invoke('gitlog', d.path).then(res => {
-            d3.select('section#gitviz')
-                // .append('div').classed('commits', true)
-                .selectAll('div.commit').data(res).enter()
-                .append('div').classed('commit', true);
-            d3.selectAll('div.commit').data(res)
-                .append('p').classed('timestamp', true).text(d => d.authorDate);
-            d3.selectAll('div.commit').data(res)
-                .append('div').classed('circle', true)
-                .html(d => d.abbrevHash).transition().style('opacity', 1);
-
-            d3.selectAll('div.commit').data(res)
-                .append('p').classed('message', true).html(d => `"${d.subject}"`);
-
-            d3.selectAll('div.commit').data(res)
-                .append('p').classed('author', true).html(d => `-- ${d.authorName}`);
-            d3.selectAll('div.commit').data(res)
-                .append('div').classed('files', true).append('div').classed('statuses', true)
-                .selectAll('p').data(d => d.status).enter()
-                .append('p').html(d => d)
-                .style('color', d => d == 'M' ? '#33658A' : d == 'A' ? '#628B48' : '#925E78')
-
-            d3.selectAll('div.files').data(res)
-                .append('div').classed('names', true)
-                .selectAll('p').data(d => d.files).enter()
-                .append('p').html(d => d)
-
-
-            // .data(res).enter()
-            // .append('div').classed('chunk', true)
-            // .style('left', (d, i) => `${i * window.innerWidth}px`)
-            // .selectAll('div.circle').data((d, i) => res[i]).enter()
-            // .append('div').classed('circle', true)
-            // .html(d => d.abbrevHash);
-            // d3.select('section#gitviz').style('width', (d, i) => `${document.querySelectorAll('div.chunk').length * window.innerWidth}px`);
-            console.log(res);
-        });
-    }
     d3.select('#main')
         .selectAll('div.dir').data(gits).enter()
         .append('div').classed('dir', true)
-        .on('click', (e, d) => gitviz(e, d))
-        .text(d => d.name)
-        .append('div').classed('emoji', true)
-        .text((d, i) => emojis[i])
+        .append('p').classed('dirname', true)
+        .html(d => d.name).on('click', (e, d) => gitviz(d.path))
+    d3.selectAll('div.dir').data(gits).append('div').classed('emoji', true)
+        .text(d => d.emoji)
         .on('click', e => openEmojiListener(e));
 });
