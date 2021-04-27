@@ -4,13 +4,15 @@
   "author": "patrick james mardis",
   "license": "MIT",
   "main": "main.js",
+  "description": "visualize git commits using electron, d3, and gitlog",
   "scripts": {
     "start": "electron .",
-    "rebuild": "electron-rebuild"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "devDependencies": {
     "electron": "^12.0.4",
-    "electron-rebuild": "^2.3.5"
+    "electron-builder": "^22.10.5"
   },
   "dependencies": {
     "d3": "^6.6.2",
