@@ -1,0 +1,102 @@
+#main{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1% 0;
+    padding-bottom: 50px;
+}
+div.dir {
+    color: #fff;
+    height: 10vw;
+    background: #222;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        background: #111;
+    }
+
+    &:nth-child(even) {
+        margin: 1% 2% 1% 1%;
+    }
+    &:nth-child(odd) {
+        margin: 1% 1% 1% 2%;
+    }
+
+    .emoji {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+emoji-picker {
+    position: fixed;
+    top: 0;
+    left:0;
+    display: none;
+}
+
+#gitviz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: none;
+    align-items: center;
+    overflow-x: scroll;
+
+    .commit {
+        width: 10vw;
+        height: 100%;
+        margin: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        flex-shrink: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+        .timestamp {
+            font-size: 14px;
+        }
+
+
+        .circle {
+            background-color: blue;
+            width: 7vw;
+            height: 7vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            flex-shrink: 0;
+            opacity: 0;
+        }
+        .files {
+            width: 10vw;
+            font-size: 14px;
+            display: flex;
+            overflow-x: scroll;
+            padding-bottom: 5px;
+            
+            .statuses {
+                padding-right: 7px;
+            }
+            
+            .names p {
+                white-space: nowrap;
+            }
+        }    
+    }
+}
