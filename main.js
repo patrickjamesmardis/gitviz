@@ -2,12 +2,11 @@ const { app, BrowserWindow, TouchBar, ipcMain } = require('electron');
 const { TouchBarButton } = TouchBar;
 const path = require('path');
 const fs = require('fs');
-const gitinfo = require('./gitinfo');
 const gitlog = require('gitlog').default;
+const gitinfo = require('./gitinfo');
 let config = require('./config.json');
 
 let mainWindow;
-let gitWindows = [];
 let gits = [];
 const root = new gitinfo(process.env.HOME);
 
@@ -71,7 +70,6 @@ function createMainWindow() {
     mainWindow.loadFile('index.html');
     mainWindow.on('closed', () => {
         mainWindow = null;
-        gitWindows.forEach(window => window = null);
     });
     const buttons = [];
     config.emojis.forEach(emoji => {
