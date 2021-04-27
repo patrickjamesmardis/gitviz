@@ -43,15 +43,46 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     function gitviz(e, d) {
         console.log(e);
-        d3.select('section#main').transition().style('opacity', 0);
-        d3.select('section#gitviz').style('display', 'block');
-        d3.select('section#terminal').transition().style('height', `${0.3 * window.innerHeight}px`).select('p').text(`${d.name} >`);
-        let gitlog;
-        ipcRenderer.invoke('gitlog', d.path).then(res => {
-            gitlog = res;
-            console.log(gitlog);
-        });
+        d3.select('section#main').style('display', 'none');
+        d3.select('section#gitviz').style('display', 'flex');
+        d3.select('section#terminal').select('p').text(`${d.name}`);
 
+        ipcRenderer.invoke('gitlog', d.path).then(res => {
+            d3.select('section#gitviz')
+                // .append('div').classed('commits', true)
+                .selectAll('div.commit').data(res).enter()
+                .append('div').classed('commit', true);
+            d3.selectAll('div.commit').data(res)
+                .append('p').classed('timestamp', true).text(d => d.authorDate);
+            d3.selectAll('div.commit').data(res)
+                .append('div').classed('circle', true)
+                .html(d => d.abbrevHash).transition().style('opacity', 1);
+
+            d3.selectAll('div.commit').data(res)
+                .append('p').classed('message', true).html(d => `"${d.subject}"`);
+
+            d3.selectAll('div.commit').data(res)
+                .append('p').classed('author', true).html(d => `-- ${d.authorName}`);
+            d3.selectAll('div.commit').data(res)
+                .append('div').classed('files', true).append('div').classed('statuses', true)
+                .selectAll('p').data(d => d.status).enter()
+                .append('p').html(d => d)
+
+            d3.selectAll('div.files').data(res)
+                .append('div').classed('names', true)
+                .selectAll('p').data(d => d.files).enter()
+                .append('p').html(d => d)
+
+
+            // .data(res).enter()
+            // .append('div').classed('chunk', true)
+            // .style('left', (d, i) => `${i * window.innerWidth}px`)
+            // .selectAll('div.circle').data((d, i) => res[i]).enter()
+            // .append('div').classed('circle', true)
+            // .html(d => d.abbrevHash);
+            // d3.select('section#gitviz').style('width', (d, i) => `${document.querySelectorAll('div.chunk').length * window.innerWidth}px`);
+            console.log(res);
+        });
     }
     d3.select('#main')
         .selectAll('div.dir').data(gits).enter()

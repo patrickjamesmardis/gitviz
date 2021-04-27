@@ -39,12 +39,12 @@ ipcMain.handle('gitlog', (event, arg) => {
         includeMergeCommitFiles: true,
         number: 200
     }
-    let res = [];
-    let gl = gitlog(gitlogOptions);
-    for (let i = 0; i < gl.length; i + 9) {
-        res.push(gl.splice(0, 9));
-    }
-    return res;
+    // let res = [];
+    // let gl = gitlog(gitlogOptions);
+    // for (let i = 0; i < gl.length; i + 9) {
+    //     res.push(gl.splice(0, 9));
+    // }
+    return gitlog(gitlogOptions);
 });
 
 ipcMain.handle('updateEmoji', (event, arg) => {
