@@ -14,7 +14,12 @@ div.dir {
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer;
+    
+    p {
+        cursor: pointer;
+        padding: 2vh 30px;
+        max-width: 48vw;
+    }
 
     &:hover {
         background: #111;
