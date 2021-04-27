@@ -55,40 +55,46 @@ emoji-picker {
     overflow-x: scroll;
 
     .commit {
-        width: 10vw;
-        height: 100%;
-        margin: 1vw;
+        width: $commitWidth;
+        min-width: 300px;
+        height: 97vh;
+        margin: 2vh 1vw 1vh 1vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
         position: relative;
         flex-shrink: 0;
         overflow-y: scroll;
         overflow-x: hidden;
+     
         
         .timestamp {
             font-size: 14px;
+     
         }
 
 
         .circle {
-            background-color: blue;
-            width: 7vw;
-            height: 7vw;
+            background-color: $high;
+            width: 10vw;
+            height: 10vw;
+            min-width: 120px;
+            min-height: 120px;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
             flex-shrink: 0;
             opacity: 0;
         }
         .files {
-            width: 10vw;
+            width: $commitWidth;
+            min-width: 300px;
             font-size: 14px;
             display: flex;
             overflow-x: scroll;
             padding-bottom: 5px;
+            font-family: $altfont;
             
             .statuses {
                 padding-right: 7px;

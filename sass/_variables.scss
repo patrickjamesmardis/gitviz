@@ -1,10 +1,10 @@
 @font-face {
     font-family: IBMPlexSans;
-    src: url(../assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+    src: url(../assets/fonts/IBMPlexSans-Regular.ttf);
 }
 @font-face {
     font-family: IBMPlexMono;
-    src: url(../assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+    src: url(../assets/fonts/IBMPlexMono-Regular.ttf);
 }
 
 $font: IBMPlexMono;
@@ -12,3 +12,4 @@ $altfont: IBMPlexSans;
 $bg: #000;
 $txt: #FFF;
 $high: #FF5A36;
+$commitWidth: 25vw;
