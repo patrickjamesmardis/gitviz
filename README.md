@@ -77,7 +77,7 @@ config.json links directory names to an emoji to use as TouchBar shortcuts when 
 }
 ```
 
-The main process can now use the above constructor to search for files starting at ```process.env.HOME```. The entire filesystem is then stored at a variable, ```root```. An array, ```gits```, is then used to store any directories that are flagged as a git repos, and their names are matched to config.json to check for any emoji shortcuts.
+The main process can now use the above constructor to search for files starting at ```process.env.HOME```. The entire filesystem is then stored at a variable, ```root```. An array, ```gits```, is then used to store any directories that are flagged as a git repo, and their names are matched to config.json to check for any emoji shortcuts.
 
 ```js
 let mainWindow;
