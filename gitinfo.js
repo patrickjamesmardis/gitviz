@@ -1,8 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-const { customAlphabet } = require('nanoid');
-const { lowercase } = require('nanoid-dictionary');
-const rand = customAlphabet(lowercase, 10);
 class dir {
     constructor(dirpath, depth = 0) {
         this.path = dirpath;
@@ -10,7 +7,6 @@ class dir {
         this.files = [];
         this.isGit = false;
         this.depth = depth;
-        this.id = rand();
         fs.readdirSync(dirpath, { withFileTypes: true }).forEach(item => {
             if (item.name === '.git') this.isGit = true;
             else if (item.isDirectory() && item.name[0] !== '.' && item.name !== 'Library' && item.name !== 'node_modules' && item.name !== 'node_modules.nosync' && item.name !== 'Applications' && item.name !== 'Pictures' && item.name !== 'Music' && item.name !== 'Movies' && item.name !== 'sound' && item.name !== 'premiere' && item.name !== 'out') {
