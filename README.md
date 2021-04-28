@@ -1,6 +1,8 @@
 # gitviz
 gitviz combines [electron.js](https://www.electronjs.org), [d3](https://d3js.org), and [gitlog](https://www.npmjs.com/package/gitlog) to visualize git commit history in a desktop application. Install the latest realase to get started.
 
+![gitviz screenshot](screenshot1.png)
+![gitviz screenshot](screenshot2.png)
 The following tutorials were helpful in understanding the technologies used in this project: 
 * [LinkedIn Learning: D3.js Essential Training for Data Scientists](https://www.linkedin.com/learning/d3-js-essential-training-for-data-scientists?u=42275329)
 * [LinkedIn Learning: Learning Data Visualization with D3.js](https://www.linkedin.com/learning/learning-data-visualization-with-d3-js?u=42275329)
