@@ -8,6 +8,12 @@ The following tutorials were helpful in understanding the technologies used in t
 * [LinkedIn Learning: Learning Data Visualization with D3.js](https://www.linkedin.com/learning/learning-data-visualization-with-d3-js?u=42275329)
 * [Electron Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start#create-a-basic-application)
 
+
+# Building the App
+To build the app from souce code, clone the repo and run ```npm install``` to install the dependencies. Config.json can be updated with paths to git repos on your computer and emojis to configure Touch Bar buttons. 
+
+Running ```npm run start``` will build and run the app without packaging any distributables. To package the app for distribution, install electron-packager gloablly using ```npm i electron-packager -g```. Next, running ```electron-packager <PATH-TO-APP-DIR> <APP-NAME>``` will package the app for your operating system. Adding the ```--all``` option will package for all OS systems. At first, I received an error for windows builds, but installing Wine through homebrew (```brew install --cask wine-stable```) fixed the issue. 
+
 # main.js
 main.js runs Electron's main process and will be the entry point for the app. I begin by including the necessary modules as well as gitinfo.js and config.json files.
 ```js
