@@ -1,5 +1,5 @@
 # gitviz
-gitviz combines [electron.js](https://www.electronjs.org), [d3](https://d3js.org), and [gitlog](https://www.npmjs.com/package/gitlog) to visualize git commit history in a desktop application. Install the latest realase to get started.
+gitviz combines [electron.js](https://www.electronjs.org), [electron-builder](https://www.electron.build), [d3](https://d3js.org), and [gitlog](https://www.npmjs.com/package/gitlog) to visualize git commit history in a desktop application. Install the latest realase to get started.
 
 ![gitviz screenshot](screenshot1.png)
 ![gitviz screenshot](screenshot2.png)
@@ -12,7 +12,7 @@ The following tutorials were helpful in understanding the technologies used in t
 # Building the App
 To build the app from souce code, clone the repo and run ```npm install``` to install the dependencies. Config.json can be updated with paths to git repos on your computer and emojis to configure Touch Bar buttons. 
 
-Running ```npm run start``` will build and run the app without packaging any distributables. To package the app for distribution, install electron-packager gloablly using ```npm i electron-packager -g```. Next, running ```electron-packager <PATH-TO-APP-DIR> <APP-NAME>``` will package the app for your operating system. Adding the ```--all``` option will package for all OS systems. At first, I received an error for windows builds, but installing Wine through homebrew (```brew install --cask wine-stable```) fixed the issue. 
+Running ```npm run start```, or ```npx electron .```, will build and run the app. To package the app for distribution, install electron-packager gloablly using ```npm i electron-packager -g```. Next, running ```electron-packager <PATH-TO-APP-DIR> <APP-NAME>``` (```electron-packager . gitviz``` if you're in the working directory) will package the app for your operating system. Adding the ```--all``` option will package for all OS systems. At first, I received an error for windows builds, but installing Wine through homebrew (```brew install --cask wine-stable```) fixed the issue. Finally, adding the dock icon uses the ```icon=PATH``` option (```--icon=build/icon.png``` from the working directory).
 
 # main.js
 main.js runs Electron's main process and will be the entry point for the app. I begin by including the necessary modules as well as gitinfo.js and config.json files.
@@ -26,7 +26,7 @@ const gitinfo = require('./gitinfo');
 let config = require('./config.json');
 ```
 
-gitinfo.js exports a class to store information pertaining to a directory. This class's constructor will recursively add any files or directories found after a given parent directory.
+gitinfo.js exports a class to store information about a directory. This class's constructor will recursively add any files or directories found after a given parent directory.
 ```js
 class dir {
     constructor(dirpath, depth = 0) {
@@ -83,7 +83,7 @@ config.json links directory names to an emoji to use as TouchBar shortcuts when 
 }
 ```
 
-The main process can now use the above constructor to search for files starting at ```process.env.HOME```. The entire filesystem is then stored at a variable, ```root```. An array, ```gits```, is then used to store any directories that are flagged as a git repo, and their names are matched to config.json to check for any emoji shortcuts.
+The main process can now use the above constructor to search for files starting at ```process.env.HOME```. An array, ```gits```, is then used to store any directories that are flagged as a git repo, and their names are matched to config.json to check for any emoji shortcuts.
 
 ```js
 let mainWindow;
